@@ -1,0 +1,3 @@
+﻿  StrypesFinal.cpp
+C:\Users\vk300\source\repos\projectstraips\Strypes Project\StrypesFinal.cpp(325,22): warning C4244: 'initializing': conversion from 'double' to 'size_t', possible loss of data
+  Strypes Project.vcxproj -> C:\Users\vk300\source\repos\projectstraips\Debug\Strypes Project.exe
