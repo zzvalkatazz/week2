@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{9152bcc5-ce41-41c5-b361-7a39bdf5d9c0}</ProjectGuid>
-    <RootNamespace>TreesTest</RootNamespace>
+    <ProjectGuid>{358d7257-6f59-47fb-8612-e9a0aa3dde8f}</ProjectGuid>
+    <RootNamespace>QUEUEPRINT</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />

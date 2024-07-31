@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{9152bcc5-ce41-41c5-b361-7a39bdf5d9c0}</ProjectGuid>
-    <RootNamespace>TreesTest</RootNamespace>
+    <ProjectGuid>{ac09d423-90b2-4f8c-a1ea-00da2b99382e}</ProjectGuid>
+    <RootNamespace>sameFromLeftRightView</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
