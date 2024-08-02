@@ -1,0 +1,2 @@
+﻿matrix-graph.obj : error LNK2001: unresolved external symbol "public: virtual void __thiscall AdjMatrixGraph::removeEdge(int,int)" (?removeEdge@AdjMatrixGraph@@UAEXHH@Z)
+C:\Users\vk300\source\repos\graphIvana\Debug\graphIvana.exe : fatal error LNK1120: 1 unresolved externals
