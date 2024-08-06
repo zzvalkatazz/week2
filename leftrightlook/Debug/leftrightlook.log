@@ -1,0 +1,4 @@
+﻿  Source.cpp
+C:\Users\vk300\source\repos\graphIvana\leftrightlook\Source.cpp(85,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\vk300\source\repos\graphIvana\leftrightlook\Source.cpp(92,15): warning C4018: '<': signed/unsigned mismatch
+  leftrightlook.vcxproj -> C:\Users\vk300\source\repos\graphIvana\Debug\leftrightlook.exe
