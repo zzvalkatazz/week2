@@ -136,7 +136,7 @@ Node<T>* AVLTree<T>::rotateLeft(Node<T>* node)
 	node->right = newParent->left;
 	newParent->left = node;
 
-	update(node);//първо се грижим за детето
+	update(node);//ГЇГєГ°ГўГ® Г±ГҐ ГЈГ°ГЁГ¦ГЁГ¬ Г§Г  Г¤ГҐГІГҐГІГ®
 	update(newParent);
 
 	return newParent;
@@ -148,7 +148,7 @@ Node<T>* AVLTree<T>::rotateRight(Node<T>* node)
 	node->left = newParent->right;
 	newParent->right = node;
 
-	update(node);//първо се грижим за детето
+	update(node);//ГЇГєГ°ГўГ® Г±ГҐ ГЈГ°ГЁГ¦ГЁГ¬ Г§Г  Г¤ГҐГІГҐГІГ®
 	update(newParent);
 
 	return newParent;
@@ -194,7 +194,7 @@ Node<T>* AVLTree<T>::insert(Node<T>* tree, const T& x)
 	return balance(tree);
 }
 template<typename T>
-Node<T>* AVLTree<T>::insert(Node<T>* tree, const T& x)
+Node<T>* AVLTree<T>::insert(const T& x)
 {
 	if (contains(root, x))
 	{
