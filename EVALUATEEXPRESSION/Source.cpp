@@ -5,64 +5,50 @@
 
 using namespace std;
 
-bool evaluateExpression(const string& expr);
-bool evaluateExpressionHelper(const string& expr, size_t& index)
-{
-	stack<bool> st;
-	while (index < expr.size())
-	{
-		char ch = expr[index];
-		if (ch == 't')
-		{
-			st.push(true);
-		}
-		else if (ch == 'f')
-		{
-			st.push(false);
-		}
-		else if (ch == '!')
-		{
-			index++;
-			bool val = evaluateExpressionHelper(expr, index);
-			st.push(!val);
-		}
-		else if (ch == '&' || ch == '|')
-		{
-			bool result = (ch == '&');
-			index++;//propuskame '('
-			while (true)
-			{
-				index++;
-				bool val = evaluateExpressionHelper(expr, index);
+char evaluate(std::stack<char>& s) {
+    bool seenTrueUpToThisPoint = false, seenFalseUpToThisPoint = false;
 
-				if (ch == '&')
-				{
-					result = result && val;
-				}
-				else if (ch == '|')
-				{
-					result = result || val;
-				}
-				if (expr[index] == ')')
-				{
-					break;
-				}
-				
-			}
-			st.push(result);
-		}
-		else if (ch == ')')
-		{
-			break;
-		}
-		index++;
-	}
-	return st.top();
+    while (s.top() != '&' && s.top() != '!' && s.top() != '|') {
+        if (s.top() == 't') {
+            seenTrueUpToThisPoint = true;
+        }
+        else {
+            seenFalseUpToThisPoint = true;
+        }
+        s.pop();
+    }
+
+    char op = s.top();
+    s.pop(); // РџРѕРїРІР°РјРµ РѕРїРµСЂР°С‚РѕСЂР° СЃР»РµРґ РєР°С‚Рѕ РіРѕ РёР·РїРѕР»Р·РІР°РјРµ
+
+    if (op == '&' && !seenFalseUpToThisPoint) {
+        return 't';
+    }
+    if (op == '!' && seenFalseUpToThisPoint) {
+        return 't';
+    }
+    if (op == '|' && seenTrueUpToThisPoint) {
+        return 't';
+    }
+    return 'f';
 }
-bool evaluateExpression(const string& expr)
-{
-	size_t index = 0;
-	return evaluateExpressionHelper(expr, index);
+
+bool parseBoolExpr(const std::string& expression) {
+    std::stack<char> s;
+
+    for (int i = 0; i < expression.size(); i++) {
+        char ch = expression[i];
+
+        if (ch != ')' && ch != '(' && ch != ',') {
+            s.push(ch);
+        }
+        if (ch == ')') {
+            char evaluationResult = evaluate(s);
+            s.push(evaluationResult);
+        }
+    }
+
+    return s.top() == 't';
 }
 int countTrueExpressions(queue<string> exprQueue)
 {
@@ -77,7 +63,7 @@ int countTrueExpressions(queue<string> exprQueue)
 			count++;
 		}
 
-		exprQueue.push(expr); // Връщаме елемента обратно в опашката
+		exprQueue.push(expr); // Г‚Г°ГєГ№Г Г¬ГҐ ГҐГ«ГҐГ¬ГҐГ­ГІГ  Г®ГЎГ°Г ГІГ­Г® Гў Г®ГЇГ ГёГЄГ ГІГ 
 	}
 	return count;
 }
@@ -97,5 +83,5 @@ int main()
 		exprQueue.push(input);
 	}
 	int result = countTrueExpressions(exprQueue);
-	cout << "Брой истинни булеви изрази: " << result << endl;
+	cout << "ГЃГ°Г®Г© ГЁГ±ГІГЁГ­Г­ГЁ ГЎГіГ«ГҐГўГЁ ГЁГ§Г°Г Г§ГЁ: " << result << endl;
 }
