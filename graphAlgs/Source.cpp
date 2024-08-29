@@ -15,7 +15,7 @@ class Graph
 		for (int i = 0; i < edgesCount; i++)
 		{
 			adjList[edges[i].first].push_back(edges[i].second);
-			adjList[edges[i].second].push_back(edges[i].first);
+			
 		}
 	}
 	void BFS(int start, std::vector<bool>& visited, int& sum, int& vertexCount);
