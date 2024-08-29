@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{a46708ef-b462-4ae5-ac60-34d447ae2c5c}</ProjectGuid>
+    <ProjectGuid>{c235b8a5-ebff-4b33-a360-461ba9388f6d}</ProjectGuid>
     <RootNamespace>binaryTreePaths</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>

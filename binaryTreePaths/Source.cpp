@@ -11,15 +11,10 @@ struct CharNode
 };
 void binaryTreePaths(CharNode* root, std::vector<std::string>& paths)
 {
-	//Извикваме рекурсивно binaryTreePaths за лявото поддърво и съхраняваме резултатите в вектора left.
-	//След като получим пътищата от лявото поддърво, добавяме текущия символ(root->data) в началото на всеки път.
-		//По същия начин, извикваме рекурсивно binaryTreePaths за дясното поддърво и съхраняваме резултатите в вектора right.
-		//Добавяме текущия символ(root->data) в началото на всеки път от дясното поддърво.
 	if (root == nullptr)
 	{
 		return;
 	}
-
 	else if (root->left == nullptr && root->right == nullptr)
 	{
 		std::string str;
@@ -57,12 +52,13 @@ int main()
 	root->left->right = new CharNode('d');
 	root->left->right->left = new CharNode('e');
 	root->right = new CharNode('f');
-	root->right ->left = new CharNode('g');
+	root->right->left = new CharNode('g');
 	root->right->right = new CharNode('h');
 
 	std::vector<std::string> paths;
 	binaryTreePaths(root, paths);
-	for (int i = 0; i < paths.size(); i++)
+
+	for (int i = 0;i< paths.size(); i++)
 	{
 		std::cout << paths[i] << ' ';
 	}

@@ -1,5 +1,5 @@
 ﻿  Source.cpp
-C:\Users\vk300\source\repos\graphIvana\binaryTreePaths\Source.cpp(27,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\vk300\source\repos\graphIvana\binaryTreePaths\Source.cpp(34,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\vk300\source\repos\graphIvana\binaryTreePaths\Source.cpp(61,20): warning C4018: '<': signed/unsigned mismatch
-  binaryTreePaths.vcxproj -> C:\Users\vk300\source\repos\graphIvana\Debug\binaryTreePaths.exe
+C:\Users\vk300\source\repos\binaryTreePaths\binaryTreePaths\Source.cpp(26,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\vk300\source\repos\binaryTreePaths\binaryTreePaths\Source.cpp(33,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\vk300\source\repos\binaryTreePaths\binaryTreePaths\Source.cpp(61,18): warning C4018: '<': signed/unsigned mismatch
+  binaryTreePaths.vcxproj -> C:\Users\vk300\source\repos\binaryTreePaths\Debug\binaryTreePaths.exe
