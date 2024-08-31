@@ -65,20 +65,23 @@ Node* rotateLeft(Node* x) {
 Node* balance(Node* node)
 {
 	int balance = balanceFactor(node);
-
+	//двойнолява
 	if (balance > 1 && balanceFactor(node->left) >= 0)
 	{
 		return rotateRight(node);
 	}
+	//ляводясно
 	if (balance > 1 && balanceFactor(node->left) < 0)
 	{
 		node->left = rotateLeft(node->left);
 		return rotateRight(node);
 	}
+	//двойнадясна
 	if(balance<-1 && balanceFactor(node->right)<=0)
 	{
 		return rotateLeft(node);
 	}
+	//дясноляво
 	if (balance < -1 && balanceFactor(node->right)>0)
 	{
 		node->right = rotateRight(node->right);
