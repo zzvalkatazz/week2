@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{e86c403b-e062-489c-82e3-c559ffadb5e1}</ProjectGuid>
+    <ProjectGuid>{ccd6639d-e6fd-4204-a776-778f80a3d179}</ProjectGuid>
     <RootNamespace>shuffle</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
