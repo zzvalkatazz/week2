@@ -1,0 +1,9 @@
+﻿  Source.cpp
+C:\Users\vk300\source\repos\graphEvenOddDistances\FunctionsChildrenTree\Source.cpp(108,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\vk300\source\repos\graphEvenOddDistances\FunctionsChildrenTree\Source.cpp(123,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\vk300\source\repos\graphEvenOddDistances\FunctionsChildrenTree\Source.cpp(147,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\vk300\source\repos\graphEvenOddDistances\FunctionsChildrenTree\Source.cpp(170): message : see reference to function template instantiation 'int maxBranching<int>(NodeFull<int> *)' being compiled
+C:\Users\vk300\source\repos\graphEvenOddDistances\FunctionsChildrenTree\Source.cpp(136,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\vk300\source\repos\graphEvenOddDistances\FunctionsChildrenTree\Source.cpp(149): message : see reference to function template instantiation 'int getNumOfLeaves<int>(NodeFull<int> *)' being compiled
+C:\Users\vk300\source\repos\graphEvenOddDistances\FunctionsChildrenTree\Source.cpp(170): message : see reference to function template instantiation 'int maxBranching<int>(NodeFull<int> *)' being compiled
+  FunctionsChildrenTree.vcxproj -> C:\Users\vk300\source\repos\graphEvenOddDistances\Debug\FunctionsChildrenTree.exe
