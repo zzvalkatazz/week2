@@ -24,6 +24,7 @@
     <ProjectGuid>{2d699ee6-71c2-4e54-8fae-434a70a5dfef}</ProjectGuid>
     <RootNamespace>задачаКонтролно2023</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>задачаКонтролно2023tree</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

@@ -18,7 +18,7 @@ void isOddEven(Node<T>* root)
     }
 
     bool descending = true, ascending = true;
-    int level = 0;
+    int level = 1;
 
     std::queue<Node<T>*> q;
     q.push(root);
@@ -29,16 +29,26 @@ void isOddEven(Node<T>* root)
         T prev;  // Не инициализираме `prev` предварително
 
         // Фиксираме стойността на prev на първия възел от текущото ниво
-        bool firstElement = true;
+
 
         for (int i = 0; i < size; i++)
         {
             Node<T>* curr = q.front();
             q.pop();
 
-            
-            prev = INT_MIN;
-            if (level % 2 != 0 && curr->data >= prev)
+            if (i == 0)
+            {
+                if (level % 2 == 0)
+                {
+                    prev = INT_MIN;
+                }
+                else if (level % 2 != 0)
+                {
+                    prev = INT_MAX;
+                }
+            }
+        
+            if (level % 2 != 0  && curr->data >= prev)
             {
                 descending = false;
             }
@@ -93,10 +103,10 @@ int main()
     Node<int>* root = new Node<int>(8);
     Node<int>* n2 = new Node<int>(6);
     Node<int>* n3 = new Node<int>(10);
-    Node<int>* n4 = new Node<int>(4);
-    Node<int>* n5 = new Node<int>(7);
-    Node<int>* n6 = new Node<int>(9);
-    Node<int>* n7 = new Node<int>(11);
+    Node<int>* n4 = new Node<int>(17);
+    Node<int>* n5 = new Node<int>(15);
+    Node<int>* n6 = new Node<int>(11);
+    Node<int>* n7 = new Node<int>(9);
     Node<int>* n8 = new Node<int>(3);
     Node<int>* n9 = new Node<int>(5);
 
