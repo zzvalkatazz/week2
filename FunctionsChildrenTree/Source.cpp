@@ -111,7 +111,7 @@ string word(NodeFull<char>* root, int k)
 	}
 	return wordOnLevel;
 }
-//// Задача 8: Да се напише функция, която приема произволно дърво и връща всички думи, които са получени от корена до някое листо.
+//// Г‡Г Г¤Г Г·Г  8: Г„Г  Г±ГҐ Г­Г ГЇГЁГёГҐ ГґГіГ­ГЄГ¶ГЁГї, ГЄГ®ГїГІГ® ГЇГ°ГЁГҐГ¬Г  ГЇГ°Г®ГЁГ§ГўГ®Г«Г­Г® Г¤ГєГ°ГўГ® ГЁ ГўГ°ГєГ№Г  ГўГ±ГЁГ·ГЄГЁ Г¤ГіГ¬ГЁ, ГЄГ®ГЁГІГ® Г±Г  ГЇГ®Г«ГіГ·ГҐГ­ГЁ Г®ГІ ГЄГ®Г°ГҐГ­Г  Г¤Г® Г­ГїГЄГ®ГҐ Г«ГЁГ±ГІГ®.
 void fillWords(NodeFull<char>* root, vector<string>& v, string currentWord)
 {
 	currentWord += root->data;
@@ -147,11 +147,12 @@ int maxBranching(NodeFull<T>* root)
 	for (int i = 0; i < root->children.size(); i++)
 	{
 		tempBranching = getNumOfLeaves(root->children[i]);
-	}
-	if (tempBranching > maxBranching)
-	{
+		if (tempBranching > maxBranching)
+	           {
 		maxBranching = tempBranching;
+	          }
 	}
+	
 	return maxBranching;
 }
 int main()
