@@ -18,7 +18,7 @@ DLListElem<T>* split(DLListElem<T>* head)
 	{
 		slow = slow->next;
 		fast = fast->next->next;
-	}8
+	}
 	DLListElem<T>* secondHalf = slow->next;
 	slow->next = nullptr;
 	if (secondHalf)
